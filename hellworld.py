@@ -24,3 +24,4 @@ print "root of radicand var b degree var a =  %s" %root
 print "var b mod var a =  %s" %modulo
 print "square root of var a: %s square root of var b: %s" %(squareroota,squarerootb)
 print ("alternative sample print", sum, "sum print.")
+print ("alternative sample print two " + str(sum) + " sum print.")
