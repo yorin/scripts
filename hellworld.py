@@ -8,6 +8,8 @@ print "hello world!"
 sum = vara + varb
 difference = varb - vara
 product = vara * varb
+quotient = varb / vara
 print "sum of var a + var b = %d" % sum
 print "differece of var b - var a = %d" %difference
 print "product of var a * var b =  %d" %product
+print "quotient of var b / var a =  %d" %quotient
