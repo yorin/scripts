@@ -18,6 +18,7 @@ print('\033[1m'  + 'some text')
 print('\033[4m'  + 'some text')
 #print('\033[30m' + 'some text') #turns text to black
 
+#http://www.siafoo.net/snippet/88
 print '\033[1;30mGray like Ghost\033[1;m'
 print '\033[1;31mRed like Radish\033[1;m'
 print '\033[1;32mGreen like Grass\033[1;m'
