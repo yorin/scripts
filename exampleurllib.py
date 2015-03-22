@@ -1,6 +1,8 @@
 import urllib2
 import re
 import json
+#http://stackoverflow.com/questions/3398852/using-python-remove-html-tags-formatting-from-a-string
+#http://stackoverflow.com/questions/3272123/python-regex-search-multiple-values-in-one-string
 
 req ='http://www.google.com/finance/converter?a=1&from=USD&to=PHP'
 #req ='http://www.google.com/finance/converter?a=1&from=USD&to=PHP?format=json'
@@ -14,3 +16,7 @@ raw_data = response.read()
 #data = json.loads(j)
 #print raw_data
 print re.search("<div id=currency_converter_result>.*", raw_data).group()
+raw_data = re.search("<div id=currency_converter_result>.*", raw_data).group()
+p = re.compile(r'<.*?>|=')
+print p.sub( '', raw_data)
+
