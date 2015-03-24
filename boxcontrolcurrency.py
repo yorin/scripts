@@ -1,7 +1,7 @@
 
 import requests
 #http://www.boxcontrol.net/write-simple-currency-converter-in-python.html#.VQwM5_mUdA4
-
+#https://github.com/boxcontrol
 a = raw_input('Enter currency to convert from?')
 a = a.upper()
 
