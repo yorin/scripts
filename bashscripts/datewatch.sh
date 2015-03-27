@@ -2,6 +2,7 @@
 
 #date
 #env TZ=EST5EDT date
+#find /usr/share/zoneinfo -name "*EDT*"
 while [ 1 ] ;# loop forever
 do
     echo -e '\0033\0143'
