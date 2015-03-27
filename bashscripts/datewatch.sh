@@ -8,5 +8,7 @@ do
     date
     env TZ=EST5EDT date
     env TZ=CST6CDT date
+    env TZ=Australia/Sydney date
     sleep 1 ;# wait a bit
+    exit 0
 done
