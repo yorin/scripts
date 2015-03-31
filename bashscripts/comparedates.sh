@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#http://unix.stackexchange.com/questions/84381/how-to-compare-two-dates-in-a-shell
 todate=$(date -d 2013-07-18 +"%y%m%d")
 cond=$(date -d 2013-07-15 +"%y%m%d")
 
