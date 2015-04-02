@@ -15,3 +15,9 @@ NEWSPIDER_MODULE = 'motube.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'motube (+http://www.yourdomain.com)'
+
+#http://mahmoud.abdel-fattah.net/2012/04/07/using-scrapy-with-proxies/
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    'project_name.middlewares.ProxyMiddleware': 100,
+}
