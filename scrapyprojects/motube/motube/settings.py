@@ -19,5 +19,5 @@ NEWSPIDER_MODULE = 'motube.spiders'
 #http://mahmoud.abdel-fattah.net/2012/04/07/using-scrapy-with-proxies/
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
-    'project_name.middlewares.ProxyMiddleware': 100,
+    'motube.middlewares.ProxyMiddleware': 100,
 }
