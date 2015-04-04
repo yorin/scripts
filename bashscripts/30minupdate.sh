@@ -1,5 +1,5 @@
 #!/bin/bash
-#env stat -c %Y 30minupdate.sh
+#env stat -c %Y datewatch.sh
 #1428164696
 #604800 7days
 COMP="604800"
@@ -15,6 +15,5 @@ then
     echo "YAHOO"
 else
     echo "NOPE"
-
 fi
 exit 0
