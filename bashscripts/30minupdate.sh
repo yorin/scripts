@@ -13,6 +13,7 @@ echo "SUMDIFF: $SUMDIFF"
 if [ "$COMP" -le "$SUMDIFF" ]
 then
     echo "YAHOO"
+    echo $(date) >> .cache/test.txt
 else
     echo "NOPE"
 fi
