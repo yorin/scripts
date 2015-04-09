@@ -11,3 +11,7 @@ print join(', ', @theSortedList)."\n";
 @theList = (3, "pear", "four", "apple", 7);
 @theSortedList = sort {$b cmp $a} @theList;
 print join(', ', @theSortedList)."\n";
+
+@theList = (205, 4, 100, 1, 2, 2000, 6, 93, 2, 65);
+@theSortedList = sort {$a cmp $b} @theList;
+print join(', ', @theSortedList)."\n";
