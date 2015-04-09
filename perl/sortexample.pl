@@ -15,3 +15,14 @@ print join(', ', @theSortedList)."\n";
 @theList = (205, 4, 100, 1, 2, 2000, 6, 93, 2, 65);
 @theSortedList = sort {$a cmp $b} @theList;
 print join(', ', @theSortedList)."\n";
+
+%h = {
+    'a' => 40,
+    'b' => 45,
+    'c' => 7,
+    'd' => 100,
+    'e' => 2
+};
+
+@sortedKeys1 = sort { $h{$a} <=> $h{$b} } keys %h;
+print join(', ', @sortedKeys1)."\n";
