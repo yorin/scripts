@@ -1,3 +1,4 @@
+#http://www.stathis.co.uk/perl-sort-tutorial/
 # standard sorting
 @theList = (4, 1, 2, 6, 93, 2, 65);
 @theSortedList = sort @theList;
@@ -25,4 +26,11 @@ print join(', ', @theSortedList)."\n";
 };
 
 @sortedKeys1 = sort { $h{$a} <=> $h{$b} } keys %h;
+print join(', ', @sortedKeys1)."\n";
+
+sub backwards { $b cmp $a }
+
+@theList1  = qw( z g b aa c );
+@theSortedList1 = sort backwards @theList1;
+
 print join(', ', @sortedKeys1)."\n";
