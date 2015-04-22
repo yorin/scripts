@@ -19,3 +19,9 @@ sed -n '/Paulo/ p' books.txt
 sed -n '/Alchemist/, 5 p' books.txt
 
 sed -n '/The/,$ p' books.txt
+
+sed '=' books.txt 
+
+sed -n '$ =' books.txt
+
+sed 's/[[:digit:]]/Book number &/' books.txt
