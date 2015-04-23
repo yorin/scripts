@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-#from motube.items import MotubeItem
+from motube.items import MotubeItem
 str = raw_input("");
 class YoutubeSpider(scrapy.Spider):
     name = "youtube"
@@ -13,8 +13,12 @@ class YoutubeSpider(scrapy.Spider):
 
     def parse(self, response):
         #pass
+        sels = []
         for sel in response.xpath('//div/h3'):
-            title = sel.xpath('a/@title').extract()
-            link = sel.xpath('a/@href').extract()
+            datafiles = MotubeItem()
+            datafiles["title"] = sel.xpath('a/@title').extract()
+            datafiles["url"] = sel.xpath('a/@href').extract()
             #desc = sel.xpath('a/text()').extract()
-            print title, link #, desc
+            sels.append(datafiles)
+        return sels
+

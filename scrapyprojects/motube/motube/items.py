@@ -12,6 +12,6 @@ class MotubeItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     #pass
-    url = Field()
-    name = Field()
+    url =  scrapy.Field()
+    title =  scrapy.Field()
     pass
