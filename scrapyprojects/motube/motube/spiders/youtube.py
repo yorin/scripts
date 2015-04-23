@@ -14,7 +14,7 @@ class YoutubeSpider(scrapy.Spider):
     def parse(self, response):
         #pass
         sels = []
-        for sel in response.xpath('//div/h3'):
+        for sel in response.xpath('//div[@class="yt-lockup-content"]/h3[@class="yt-lockup-title"]'):
             datafiles = MotubeItem()
             datafiles["title"] = sel.xpath('a/@title').extract()
             datafiles["url"] = sel.xpath('a/@href').extract()
