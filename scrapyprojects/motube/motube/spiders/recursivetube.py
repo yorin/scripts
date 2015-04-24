@@ -11,7 +11,7 @@ class RecursivetubeSpider(scrapy.Spider):
         'https://www.youtube.com/results?search_query=rush',
     )
     def start_requests(self):
-      for i in range(5):
+      for i in range(1,5):
         yield Request('https://www.youtube.com/results?search_query=rush&page=' + str(i), self.parse_items)
         print i
     def parse_items(self, response):
