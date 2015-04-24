@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from motube.items import MotubeItem
-str = raw_input("");
+q = raw_input("");
+
 class YoutubeSpider(scrapy.Spider):
     name = "youtube"
     allowed_domains = ["youtube.com"]
     start_urls = (
-        #'https://www.youtube.com/',
-        #'https://www.youtube.com/results?search_query=rush',
-        "https://www.youtube.com/results?search_query="+ str,
+         #'https://www.youtube.com/',
+         #'https://www.youtube.com/results?search_query=rush',
+         'https://www.youtube.com/results?search_query='+str(q),
     )
-
-    def parse(self, response):
+    def parse_items(self, response):
         #pass
         sels = []
         for sel in response.xpath('//div[@class="yt-lockup-content"]/h3[@class="yt-lockup-title"]'):

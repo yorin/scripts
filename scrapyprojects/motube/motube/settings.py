@@ -12,7 +12,6 @@ BOT_NAME = 'motube'
 
 SPIDER_MODULES = ['motube.spiders']
 NEWSPIDER_MODULE = 'motube.spiders'
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'motube (+http://www.yourdomain.com)'
 
