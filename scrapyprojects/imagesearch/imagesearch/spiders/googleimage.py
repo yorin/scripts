@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
-
+from imagesearch.items import ImagesearchItem
+#http://doc.scrapy.org/en/latest/topics/spiders.html#spider-arguments
 
 class GoogleimageSpider(scrapy.Spider):
     name = "googleimage"

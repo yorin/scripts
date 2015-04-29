@@ -38,3 +38,12 @@ DOWNLOADER_MIDDLEWARES = {
 # http://host3:port
 # ...
 PROXY_LIST = '/path/to/proxy/list.txt'
+
+#ITEM_PIPELINES = {
+#'imagesearch.pipelines.HtmlFilePipeline': 300,
+#
+#}
+
+ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 900,}
+#ITEM_PIPELINES = {'imagesearch.pipelines.MyImagesPipeline': 900,}
+IMAGES_STORE = '/home/werby/scripts/scrapyprojects/imagesearch/imagesearch/spiders'

@@ -11,4 +11,9 @@ import scrapy
 class ImagesearchItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    html = scrapy.Field()
+    url = scrapy.Field()
+    #handling image
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
     pass
