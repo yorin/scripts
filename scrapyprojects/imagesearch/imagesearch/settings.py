@@ -44,6 +44,9 @@ PROXY_LIST = '/path/to/proxy/list.txt'
 #
 #}
 
-ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 900,}
+ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 900,
+                  'imagesearch.pipelines.MyImagesPipeline': 901,
+}
 #ITEM_PIPELINES = {'imagesearch.pipelines.MyImagesPipeline': 900,}
-IMAGES_STORE = '/home/werby/scripts/scrapyprojects/imagesearch/imagesearch/spiders'
+IMAGES_STORE = '/home/werby/scripts/scrapyprojects/imagesearch/imagesearch/spiders/images/'
+IMAGES_THUMBS = { 'small': (30, 30),}

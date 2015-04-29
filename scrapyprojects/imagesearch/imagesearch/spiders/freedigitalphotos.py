@@ -17,7 +17,7 @@ class FreedigitalphotosSpider(scrapy.Spider):
 
     def parse(self, response):
         hxs = HtmlXPathSelector(response)
-        sites = hxs.select('//div[@class="box-padding-mobile clearfix"]')
+        sites = hxs.xpath('//div[@class="box-padding-mobile clearfix"]')
         #sites = hxs.select('//div[@class="padding-10-0"]')
         #sites = hxs.select('//div[@class="padding-10-0"]')
         #for site in sites:
@@ -25,9 +25,11 @@ class FreedigitalphotosSpider(scrapy.Spider):
           #print image_urls
         for site in sites:
           item = ImagesearchItem()
-          image_urls = site.select('//img/@src').extract()
+          #image_urls = site.select('//img/@src').extract()
+          image_url = site.xpath("//img[contains(.//@src, 'rackcdn')]")
+          image_urls = image_url.xpath('@src').extract()
           #item['image_urls'] = ["http://www.freedigitalphotos.net" + x for x in image_urls]
           item['image_urls'] = image_urls
           return item
-
-        #pass
+          #print image_urls
+          #pass

@@ -16,4 +16,5 @@ class ImagesearchItem(scrapy.Item):
     #handling image
     image_urls = scrapy.Field()
     images = scrapy.Field()
+    image_paths = scrapy.Field()
     pass
