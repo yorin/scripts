@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #https://groups.google.com/forum/#!topic/scrapy-users/ZpP7iQliGj0
 #http://stackoverflow.com/questions/16044616/downloading-images-in-scrapy
+#http://pravin.paratey.com/posts/writing-a-spider-in-10-mins-using-scrapy
 import scrapy
 from imagesearch.items import ImagesearchItem
 from scrapy.spider import BaseSpider
