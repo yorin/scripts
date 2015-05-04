@@ -16,11 +16,14 @@ def LetterChanges(str):
 
 def LetterChanges2(str):
     orig = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    new = 'bcdEfghIjklmnOpqrstUvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZA'
+    new = 'bcdEfghIjklmnOpqrstUvwxyzAbcdEfghIjklmnOpqrstUvwxyzA'
+    capvowel = 'AEIOU'
     result = ''
     for c in str:
         if c in orig:
+            print orig.index(c) 
             c = new[orig.index(c)]
+            print c
         result += c
     return result
 
