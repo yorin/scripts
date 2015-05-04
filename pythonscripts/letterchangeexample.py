@@ -14,4 +14,15 @@ def LetterChanges(str):
             rv_str += letter
     return rv_str
 
+def LetterChanges2(str):
+    orig = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    new = 'bcdEfghIjklmnOpqrstUvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZA'
+    result = ''
+    for c in str:
+        if c in orig:
+            c = new[orig.index(c)]
+        result += c
+    return result
+
 print LetterChanges(raw_input())
+print LetterChanges2(raw_input())
