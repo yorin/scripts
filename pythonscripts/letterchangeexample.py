@@ -1,4 +1,5 @@
 #http://stackoverflow.com/questions/10956286/how-to-solve-this-python-puzzle-in-a-much-more-elegant-manner
+#https://gomputor.wordpress.com/2008/09/27/search-replace-multiple-words-or-characters-with-python/
 def LetterChanges(str):
     rv_str = ""
     vowels = ['a', 'e', 'i', 'o', 'u']
