@@ -1,3 +1,4 @@
+#http://stackoverflow.com/questions/10956286/how-to-solve-this-python-puzzle-in-a-much-more-elegant-manner
 def LetterChanges(str):
     rv_str = ""
     vowels = ['a', 'e', 'i', 'o', 'u']
