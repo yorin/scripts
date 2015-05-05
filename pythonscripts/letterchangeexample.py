@@ -23,11 +23,46 @@ def LetterChanges2(str):
     result = ''
     for c in str:
         if c in orig:
-            print orig.index(c) 
             c = new[orig.index(c)]
-            print c
         result += c
     return result
+
+
+
+#  chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZA'
+#  lower_chars = chars.lower()
+#  vowels = 'aeiou'
+#  result = ''
+#  for char in str:
+#    if char in chars:    
+#      idx = chars.index(char)
+#      result = result + chars[idx+1]
+#    elif char in lower_chars:
+#      idx = lower_chars.index(char)
+#      new_char = lower_chars[idx+1]
+#      if new_char in vowels:
+#        new_char = new_char.upper()
+#      result = result + new_char
+#    else:
+#      result = result + char
+#      
+#  
+#  return result
+
+
+#  next_str = ""
+#  for c in _str:
+#    if c.isalpha():
+#      if c in ("z","Z"):
+#        next_str += "a"
+#      else:
+#        next_str += chr(ord(c) + 1)
+#    else:
+#      next_str += c
+#                
+#  return "".join(map(lambda c: c.upper() if c in ("aeiou") else c, next_str))
+
+
 
 print LetterChanges(raw_input())
 print LetterChanges2(raw_input())
